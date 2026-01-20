@@ -121,3 +121,44 @@ h2 { margin-top: 0; font-size: 1.2rem; }
 .abstract { margin-top: 0.5rem; }
 .abstract summary { cursor: pointer; }
 .abstract p { margin: 0.5rem 0 0; color: #333; }
+
+.tagline { margin: 0 0 0.9rem; color: #444; }
+
+.featured { border: 1px solid #ccc; }
+
+.theme { padding: 0.75rem 0; border-top: 1px solid #eee; }
+.theme:first-of-type { border-top: none; padding-top: 0; }
+.theme-title { font-weight: 600; margin-bottom: 0.35rem; }
+.theme p { margin: 0.4rem 0; }
+
+.pub-tag { margin-top: 0.35rem; color: #444; }
+
+.abstract { margin-top: 0.5rem; }
+.abstract summary { cursor: pointer; }
+.abstract p { margin: 0.5rem 0 0; color: #333; }
+
+
+.pub-tag {
+  margin-top: 0.45rem;
+  padding: 0.45rem 0.65rem;
+  border-left: 3px solid #ddd;
+  background: #fafafa;
+  border-radius: 10px;
+  color: #444;
+}
+.subhead { margin: 0.25rem 0 0.5rem; font-size: 1rem; }
+
+.pubs-compact li { margin: 0.6rem 0; }
+
+.journal { font-style: italic; }
+
+.doi {
+  margin-left: 0.4rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.doi:hover { border-bottom-color: currentColor; }
+
+.pub-archive { margin-top: 0.75rem; }
+.pub-archive summary { cursor: pointer; }
+
