@@ -9,7 +9,7 @@ if (el) {
   });
 }
 
-// Replace empty links with "Coming soon"
+// Replace empty links with a useful "coming soon" label.
 document.querySelectorAll("a.auto-link").forEach((a) => {
   const href = (a.getAttribute("href") || "").trim();
   if (!href || href === "#") {
@@ -19,4 +19,14 @@ document.querySelectorAll("a.auto-link").forEach((a) => {
     span.textContent = text;
     a.replaceWith(span);
   }
+});
+
+// If a navigation link points to a collapsed <details> section, open it.
+document.querySelectorAll('.nav a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (target && target.tagName === "DETAILS") {
+      target.open = true;
+    }
+  });
 });
